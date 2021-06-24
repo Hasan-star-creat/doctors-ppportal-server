@@ -58,7 +58,7 @@ client.connect((err) => {
   });
 
  
-  app.get("/ourDoctor", (req, res) => {
+  app.get("/doctors", (req, res) => {
     doctorCollection.find({}).toArray((err, documents) => {
       res.send(documents);
     });
